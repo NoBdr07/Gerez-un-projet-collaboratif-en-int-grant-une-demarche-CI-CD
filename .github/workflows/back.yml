@@ -21,8 +21,8 @@ jobs:
 
       - name: Build and test with Maven
         run: |
-          mvn -B package --file pom.xml
-          mvn -B test --file pom.xml   
+          mvn -B package 
+          mvn -B test 
         working-directory: ./back/     
 
       - name: Generate back report
