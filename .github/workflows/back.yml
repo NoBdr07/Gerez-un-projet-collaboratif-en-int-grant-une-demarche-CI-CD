@@ -81,9 +81,6 @@ jobs:
 
     - name: Build backend with Maven
       run: cd back && mvn clean install 
-
-    - name: List directories before scan
-      run: ls -R ./back/target/site/
       
     - name: SonarCloud Scan 
       uses: sonarSource/sonarcloud-github-action@master
