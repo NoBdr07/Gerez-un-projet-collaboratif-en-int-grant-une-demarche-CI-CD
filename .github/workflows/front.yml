@@ -28,7 +28,7 @@ jobs:
       working-directory: ./front/
 
     - name: run test and generate code coverage
-      run: npm test -- --watch=false --browsers=ChromeHeadless --code-coverage
+      run: npm test --watch=false --browsers=ChromeHeadless --code-coverage
       working-directory: ./front/
 
     - name: Generate front report 
